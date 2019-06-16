@@ -1,0 +1,14 @@
+h1 Users#index
+
+table.table
+  thead.thead-dark
+    tr
+      th scope="col" id
+      th scope="col" name
+      th
+  tbody
+    - @users.each do |user|
+      tr
+        th scope="row" = user.id
+        td = user.name
+        td = link_to "詳細", user_path(user), class: "btn btn-primary"

@@ -1,0 +1,13 @@
+h1 User#show
+
+table.table
+  thead
+    tr
+      th id
+      th name
+      th created_at
+  tbody
+    tr
+      td = @user.id
+      td = @user.name
+      td = @user.created_at
