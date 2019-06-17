@@ -1,0 +1,9 @@
+h1 プロフィールの登録
+
+.nav.justify-content-end
+  = link_to '摂取量', profile_path, class: 'nav-link'
+
+= form_with model: @profile, local: true do |f|
+ .form-group
+  = form-group
+  = f.label :

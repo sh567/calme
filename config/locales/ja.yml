@@ -6,6 +6,16 @@ ja:
         restrict_dependent_destroy:
           has_one: "%{record}が存在しているので削除できません"
           has_many: "%{record}が存在しているので削除できません"
+    models:
+      profile: プロフィール
+      attrbutes:
+        profile:
+          user: ユーザーネーム
+          age: 年齢
+          sex: 性別
+          height: 身長
+          weight: 体重
+          activity_amount: 活動量
   date:
     abbr_day_names:
     - 日

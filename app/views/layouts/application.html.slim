@@ -21,3 +21,15 @@ html
         div class="alert alert-#{type}"
           = message
       = yield
+      .navbar-brand Calme
+      
+      ul.navbar-nav.ml-auto
+        - if current_user
+          li.nav-item= link_to 'ログアウト', logout_path, method: :delete, class: 'nav-link'
+        - else
+          li.nav-item= link_to 'ログイン', login_path, class: 'nav-link'
+    .container
+      - flash.each do |type, message|
+        div class="alert alert-#{type}"
+          = message
+      = yield
